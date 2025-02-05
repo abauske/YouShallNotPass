@@ -13,7 +13,7 @@ To include this into your own Unity project you need to:
 2. Add `MapStud.cs` script to your map object (any object you want to be the map). It should show the custom editor script defined in `Map.cs`.
 3. Press the "Create Map" button and wait for the mapping process to finish. Now your map data is generated and persistent.
 4. Add sample auxilary cars and provide those to an instance of `CarSpawner.cs` to get opposing traffic on your map. See the `AutoTraffic` folder for useful scripts.
-5. Prepare your main car and make it drivable. Use `OvertakingAnalyzer.cs` for automatic overtaking distance calculation and publishing
+5. Prepare your main car and make it drivable. Use `OvertakingAnalyzer.cs` for automatic overtaking distance calculation and publishing (subscribe for the overtaking path using `AddPathListener()` first)
 6. Improve the rest of your Unity project with all the rest of the scripts (add navigation system, HUD, logging, to-be-driven sections, ...)
 
 
