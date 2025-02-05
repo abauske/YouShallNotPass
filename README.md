@@ -1,21 +1,20 @@
 # YouShallNotPass - Safe sight prediction models
-Safe sight prediction models of "You Shall Not Pass: Warning Drivers of Unsafe Overtaking Maneuvers on Country Roads by Predicting Safe Sight Distance"
+Safe sight prediction models of the CHI '25 paper "You Shall Not Pass: Warning Drivers of Unsafe Overtaking Maneuvers on Country Roads by Predicting Safe Sight Distance" (https://doi.org/10.1145/3706598.3713768). 
 
 Main used and selfmade Unity scripts can be found in folder `unity-assets`.
 
 
-Calculation of required overtaking distances is done using the scripts inside `unity-assets/RequiredDist` folder.
-Just call respective `getRequiredDist(...)` function (See interface in `unity-assets/RequiredDist/RequiredDist.cs`).
+Calculation of required overtaking distances is done using the scripts inside the `unity-assets/RequiredDist` folder.
+Just call the respective `getRequiredDist(...)` function (see interface in `unity-assets/RequiredDist/RequiredDist.cs`).
 See how it was used in `unity-assets/OvertakingAnalyzer.cs`.
 
 To include this into your own Unity project you need to:
-1. create a road network using [RoadArchitect](https://github.com/MicroGSD/RoadArchitect)
-2. add `MapStud.cs` script to your map object (any object you want to be the map). It should show the custom editor script defined in `Map.cs`.
-3. press Create Map button and wait for the mapping process to finish. Now your map data is generated and persisted.
-4. add sample auxilary cars and provide those to an instance of `CarSpawner.cs` to get opposing traffic on your map. See `AutoTraffic` folder for useful scripts.
-5. prepare your main car and make it drivable. Use `OvertakingAnalyzer.cs` for automatic overtaking distance calculation and publishing
-6. improve the rest of your game with all the rest of the scripts (add navigation system, HUD, logging, to-be-driven sections, ...)
-
+1. Create a road network using [RoadArchitect](https://github.com/MicroGSD/RoadArchitect)
+2. Add `MapStud.cs` script to your map object (any object you want to be the map). It should show the custom editor script defined in `Map.cs`.
+3. Press the "Create Map" button and wait for the mapping process to finish. Now your map data is generated and persistent.
+4. Add sample auxilary cars and provide those to an instance of `CarSpawner.cs` to get opposing traffic on your map. See the `AutoTraffic` folder for useful scripts.
+5. Prepare your main car and make it drivable. Use `OvertakingAnalyzer.cs` for automatic overtaking distance calculation and publishing
+6. Improve the rest of your Unity project with all the rest of the scripts (add navigation system, HUD, logging, to-be-driven sections, ...)
 
 
 Content:
